@@ -1,0 +1,715 @@
+/* Header */
+.hero-header {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	height: 42.25rem;
+	background: url('../../assets/img/bg-home-header.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.hero-header__left {
+	width: 29.5rem;
+	background-color: hsla(0, 0%, 0%, 0.65);
+	padding-left: 6.6rem;
+}
+
+.hero-header__logo {
+	margin-top: 3.72rem;
+}
+
+.hero-header__title {
+	margin-top: 6.81rem;
+	color: var(--light);
+}
+
+.hero-header__list {
+	margin-top: 3.25rem;
+	padding-left: 0;
+	list-style-type: none;
+}
+
+.hero-header__social-link {
+	display: block;
+	width: 19.68rem;
+	height: 3.87rem;
+	line-height: 3.87rem;
+	margin: 0.63rem 0;
+	padding-left: 0.31rem;
+	color: var(--light);
+	background-color: var(--light-alpha);
+}
+
+.hero-header__social-link img {
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0.68rem 0.5rem;
+	background-color: hsla(0, 0%, 70%, 0.4);
+	float: right;
+}
+
+.hero-header__social-link:hover {
+	background-color: var(--yellow-lemon-alpha);
+}
+
+.hero-header__nav-link {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 15rem;
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	text-transform: capitalize;
+	font-size: var(--body-bold-font-size);
+	font-weight: var(--body-bold-font-weight);
+	color: var(--dark);
+	background-color: var(--yellow-lemon);
+	border-top-left-radius: 0.31rem;
+	border-top-right-radius: 0.31rem;
+}
+
+.hero-header__nav-link img {
+	position: relative;
+	top: 0.31rem;
+	padding-right: 1.12rem;
+}
+
+.hero-header__form-block {
+	width: 24.81rem;
+	height: 19rem;
+	margin-top: 9.68rem;
+	margin-left: 7.5rem;
+	padding: 1rem 1.87rem;
+	background-color: hsla(0, 6%, 93%, 0.9);
+}
+
+.hero-header__form-block hr {
+	border: 0.06rem solid var(--cyan-sky);
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1.3rem;
+}
+
+.form__row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 1.5rem;
+}
+
+.form__row label {
+	font-weight: var(--form-label-font-weight);
+	font-size: var(--form-label-font-size);
+}
+
+.form__input {
+	width: 10rem;
+	height: 1.8rem;
+	margin-top: 0.8rem;
+	background-color: hsla(0, 6%, 88%, 1);
+	border: none;
+	color: var(--cyan-sky);
+}
+
+.form__submit-button {
+	width: 10rem;
+	height: 1.8rem;
+	background-color: var(--yellow-lemon);
+	border: none;
+}
+
+.form__radio-submit {
+	display: none;
+}
+
+/* Weather */
+.weather {
+	text-align: center;
+}
+
+.weather__days-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.weather__day {
+	display: block;
+	width: 14.25rem;
+	height: 5.12rem;
+	margin-top: 2.18rem;
+	line-height: 5.12rem;
+	font-weight: var(--body-bold-font-weight);
+	background-color: var(--gray-dark);
+	color: var(--light);
+}
+
+.weather__day--active {
+	background-color: var(--yellow-lemon);
+}
+
+.weather__day:hover {
+	background-color: var(--yellow-lemon);
+}
+
+.weather__prevision-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background: url('../../assets/img/bg-weather.jpg') center no-repeat;
+	width: auto;
+	height: 34rem;
+}
+
+.weather__prevision-item {
+	width: 19.68rem;
+	height: 26rem;
+	background-color: var(--light-alpha);
+	margin-top: 4.93rem;
+	text-transform: capitalize;
+}
+
+.weather__prevision-title {
+	margin-top: 2rem;
+	color: var(--light);
+	font-weight: var(--body-bold-font-weight);
+}
+
+.weather__prevision-icon {
+	margin: 2.5rem;
+}
+
+.weather__prevision-degree {
+	color: var(--light);
+	font-size: var(--h2-font-size);
+}
+
+.weather__prevision-details {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	height: 7rem;
+	background-color: var(--gray-light);
+	font-weight: var(--body-bold-font-weight);
+	text-transform: uppercase;
+	padding: 1rem 1rem 0 1rem;
+	margin: 2rem;
+}
+
+.weather__detail-temperature {
+	display: block;
+	background-color: hsl(0, 0%, 85%);
+	margin-top: 1rem;
+	padding: .2rem;
+}
+
+/* Skills */
+.skills {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+	padding: 6.5rem 6.6rem;
+}
+
+.skills__item {
+	width: 20rem;
+	height: 22.43rem;
+	background-color: var(--blue-midnight);
+	color: var(--light);
+}
+
+.skills__item:hover {
+	background-color: var(--yellow-lemon);
+}
+
+.skills__icon {
+	margin-top: 4.06rem;
+}
+
+.skills__title {
+	text-transform: uppercase;
+	color: var(--light);
+	margin-top: 2.93rem;
+	margin-bottom: 1.25rem;
+}
+
+.skills__description {
+	padding: 1.25rem;
+}
+
+/* Gallery */
+.gallery {
+	background-color: var(--gray-light);
+}
+
+.gallery__content {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 4.81rem;
+}
+
+.gallery__title {
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 3.62rem;
+	margin-bottom: 4rem;
+}
+
+.gallery__nav {
+	display: flex;
+	flex-direction: column;
+}
+
+.gallery__nav-item {
+	width: 19.75rem;
+	height: 3.81rem;
+	line-height: 3.81rem;
+	color: var(--light);
+	background-color: var(--blue-midnight);
+	text-transform: uppercase;
+	font-weight: var(--body-bold-font-weight);
+	margin: 0.25rem 0;
+	padding-left: 1rem;
+}
+
+.gallery__nav-item--active {
+	width: 19.75rem;
+	height: 3.81rem;
+	line-height: 3.81rem;
+	color: var(--dark);
+	background-color: var(--yellow-lemon);
+	text-transform: uppercase;
+	font-weight: var(--body-bold-font-weight);
+	margin: 0.25rem 0;
+	padding-left: 1rem;
+}
+
+.gallery__nav-icon {
+	width: .99rem;
+	height: 1.45rem;
+	background-color: var(--light-alpha);
+	float: right;
+	padding: 1.17rem 1.3rem;
+}
+
+.gallery__img {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 54.93rem;
+	height: 25.37rem;
+	background: url('../../assets/img/suit-room.jpg') center no-repeat;
+	background-size: cover;
+	margin-top: .25rem;
+	margin-left: 2.19rem;
+}
+
+.gallery__img-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 5rem;
+	color: var(--light);
+	background-color: var(--blue-midnight-alpha);
+
+}
+
+.gallery-detail {
+	padding-left: 1.44rem;
+}
+
+.gallery-detail__title {
+	font-weight: var(--body-bold-font-weight);
+	text-transform: capitalize;
+}
+
+.gallery-detail__title {
+	display: block;
+	margin-bottom: .5rem;
+}
+
+.gallery-detail__description {
+	text-transform: uppercase;
+}
+
+.gallery-navlink {
+	width: 5rem;
+	height: 5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-color: hsla(0, 0%, 90%, .6);
+	padding: 0;
+	margin: 0;
+}
+
+.gallery-navlink__circle {
+	list-style-type: none;
+	padding: 0 .2rem;
+}
+
+.gallery-navlink__circle img {
+	width: .8rem;
+	height: .8rem;
+}
+
+/* Places */
+.places {
+	padding-bottom: 6.44rem;
+}
+
+.places__title {
+	text-align: center;
+	text-transform: uppercase;
+	margin: 7.13rem 0 2.94rem 0;
+}
+
+.places__list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.places__item {
+	background: var(--gray-light);
+	box-shadow: 5px 6px 10px 0px hsl(0, 0%, 85%);
+}
+
+.places-details {
+	margin-left: 0.88rem;
+}
+
+.places-details__title {
+	display: block;
+	font-weight: var(--body-bold-font-weight);
+	margin-bottom: 0.31rem;
+}
+
+.places-details__location {
+	text-transform: uppercase;
+	color: var(--blue-sky);
+}
+
+.places-navlink {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	margin: 3.44rem 0 0 0;
+}
+
+.places-navlink__circle {
+	list-style-type: none;
+	padding: 0 .2rem;
+}
+
+.places-navlink__circle img {
+	width: .8rem;
+	height: .8rem;
+}
+
+
+/* Media queries for tablet */
+@media (max-width: 1024px) {
+	/* Header */
+	.hero-header__left {
+		position: relative;
+		width: 100%;
+		max-width: 23rem;
+		padding: 2rem 0 0 3rem;
+	}
+
+	.hero-header__form-block {
+		width: 24rem;
+		height: 19rem;
+		margin-top: 12rem;
+	}
+
+	/* Weather */
+	
+	.weather__title {
+		padding: 3.62rem 0 1rem 0;
+	}
+
+	.weather__prevision-list {
+		height: 38rem;
+	}
+
+	.weather__prevision-item {
+		width: 100%;
+		max-width: 17.5rem;
+		height: 28rem;
+	}
+
+	.weather__prevision-icon {
+		margin: 1rem 0;
+	}
+
+	.weather__prevision-details {
+		height: 10rem;
+	}
+
+	.weather__detail {
+		margin: 0 0.5rem 1.5rem 0.5rem;
+	}
+
+
+	/* Skills */
+	
+	.skills {
+		padding: 5rem 1.8rem;
+	}
+
+	.skills__item {
+		width: 17.5rem;
+		//height: 15rem;
+		justify-content: space-between;
+		margin-bottom: 1.25rem;
+	}
+
+
+	/* Gallery */
+	.gallery__nav-item,
+	.gallery__nav-item--active {
+		width: 100%;
+		max-width: 30rem;
+	}
+
+	.gallery__img {
+		width: 100%;
+		max-width: 41rem;
+	}
+
+
+	/* Places */
+	.places {
+		padding-bottom: 2.31rem;
+	}
+
+	.places__item {
+		width: 100%;
+		max-width: 13rem;
+		height: auto;
+	}
+
+	.places__item img {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+	}
+
+	.places-navlink {
+		margin-bottom: 4rem;
+	}
+}
+
+/* Media queries for mobile */
+@media (max-width: 768px) {
+	/* Header */
+	.hero-header {
+		flex-direction: column;
+		height: 79rem;
+	}
+
+	.hero-header__left {
+		position: relative;
+		width: 48rem;
+		max-width: 48rem;
+		padding: 0 0 5rem 0;
+
+	}
+
+	.hero-header__logo {
+		display: block;
+		margin-top: 1.5rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.hero-header__title {
+		text-align: center;
+		margin-top: 3.06rem;
+	}
+
+	.hero-header__list {
+		margin: 1.62rem 1.5rem;
+	}
+
+	.hero-header__social-link {
+		width: 100%;
+		max-width: 45rem;
+	}
+
+	.hero-header__nav-link {
+		left: 35%;
+	}
+
+	.hero-header__form-block {
+		width: 34.4rem;
+		height: 41rem ;
+		margin-top: 2rem;
+		margin-left: 5rem;
+	}
+
+	.form__row {
+		flex-direction: column;
+	}
+
+	.form__input {
+		width: 100%;
+		height: 2.75rem;
+		margin-bottom: 1.62rem;
+	}
+
+	/* 
+	Hide radio & submit buttons and
+	make another for tablet & mobile
+	*/
+	.form__radio-desktop {
+		display: none;
+	}
+	
+	.form__radio-submit {
+		display: flex;
+		flex-direction: column;
+		margin-top: 0rem;
+	}
+
+	.form__radio-submit .form__radio {
+		display: flex;
+		flex-direction: row;
+	}
+
+	/* Sibling first div child in .form__radio class */
+	.form__radio-submit .form__radio > div {
+		margin-right: 5rem;
+	}
+
+	.form__submit-button {
+		width: 100%;
+		height: 2.81rem;
+		margin-top: 1.69rem;
+	}
+
+	/* Weather */
+	.weather__title {
+		padding: 3.62rem 0;
+	}
+
+	.weather__days-list {
+		flex-direction: column;
+	}
+
+	.weather__day {
+		width: 100%;
+		margin-top: 0;
+	}
+
+	.weather__prevision-list {
+		height: auto;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		margin-top: 0;
+		padding-bottom: 1.5rem;
+		background: url('../../assets/img/bg-weather_dm.jpg') center no-repeat;
+		background-size: cover;
+	}
+
+	.weather__prevision-item {
+		width: 90%;
+		height: 23rem;
+		margin: 1.25rem 1.5rem 0 1.5rem;
+	}
+
+	.weather__prevision-title {
+		margin-top: 1.38rem;
+	}
+
+	.weather__prevision-icon {
+		margin: 1.25rem 0;
+	}
+
+	.weather__prevision-details {
+		height: 5.31rem;
+		justify-content: center;
+	}
+
+	.weather__detail {
+		margin: 0 1.12rem;
+	}
+
+
+	/* Skills */
+	.skills {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 5.5rem 1.5rem;
+	}
+
+	.skills__item {
+		width: 100%;
+		height: 15rem;
+		margin-bottom: 1.25rem;
+	}
+
+	.skills__icon {
+		margin-top: 2.19rem;
+	}
+
+	.skills__title {
+		margin-top: 1.38rem;
+		margin-bottom: 1.88rem;
+	}
+
+	.skills__description {
+		padding: 0 2rem;
+	}
+
+
+	/* Gallery */
+	.gallery {}
+
+	.gallery__content {
+		flex-direction: column;
+	}
+
+	.gallery__nav-item,
+	.gallery__nav-item--active {
+		width: 100%;
+		max-width: 44rem;
+	}
+
+	.gallery__img {
+		width: 100%;
+		max-width: 45rem;
+		margin-left: 0;
+	}
+
+
+	/* Places */
+	.places {
+		padding-bottom: 2.31rem;
+	}
+
+	.places__item {
+		width: 100%;
+		max-width: 19.8rem;
+		height: auto;
+	}
+
+	.places__item img {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+	}
+}

@@ -1,0 +1,103 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+/* Modules */
+@import 'modules/footer.css';
+
+/* Pages */
+@import 'pages/index.css';
+@import 'pages/contact.css';
+
+/* Design system */
+:root {
+	/* Colors */
+	--gray-light: hsl(0, 6%, 93%);
+	--blue-midnight: hsl(223, 27%, 23%);
+	--yellow-lemon: hsl(50, 89%, 67%);
+	--light: hsl(0, 0%, 100%);
+	--cyan-sky: hsl(208, 24%, 68%);
+	--dark: hsl(0, 0%, 0%);
+	--gray-dark: hsl(160, 2%, 30%);
+	--blue-sky: hsl(213, 46%, 45%);
+	--blue-midnight-alpha: hsla(223, 27%, 23%, 0.9);
+	--yellow-lemon-alpha: hsla(50, 89%, 60%, 0.3);
+	--light-alpha: hsla(0, 0%, 100%, 0.3);
+	--cyan-sky-alpha: hsla(208, 24%, 68%, 0.2);
+
+	/* Text config */
+	--h1-font-weight: 700;
+	--h2-font-weight: 700;
+	--h3-font-weight: 700;
+	--body-bold-font-weight: 700;
+	--body-regular-font-weight: 400;
+	--form-label-font-weight: 700;
+
+	--text-font-family: 'Roboto';
+
+	--h1-font-size: 2rem;
+	--h2-font-size: 1.5rem;
+	--h3-font-size: 1.13rem;
+	--body-bold-font-size: 1rem;
+	--body-regular-font-size: 1rem;
+	--form-label-font-size: 0.75rem;
+}
+
+body {
+	font-family: var(--text-font-family);
+	font-weight: var(--body-regular-font-weight);
+	font-size: var(--body-regular-font-size);
+	color: var(--dark);
+	margin: 0;
+}
+
+section {
+	padding: 0 6.6rem;
+}
+
+h1 {
+	font-weight: var(--h1-font-weight);
+	font-size: var(--h1-font-size);
+	color: var(--dark);
+}
+
+h2 {
+	font-weight: var(--h2-font-weight);
+	font-size: var(--h2-font-size);
+	color: var(--dark);
+}
+
+h3 {
+	font-weight: var(--h3-font-weight);
+	font-size: var(--h3-font-size);
+	color: var(--dark);
+}
+
+a {
+	text-decoration: none;
+}
+
+.upper {
+	text-transform: uppercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+/* Tablet media query */
+@media (max-width: 1024px) {
+	section {
+		padding: 0 3rem;
+	}
+}
+
+/* Mobile media query */
+@media (max-width: 768px){
+	.hidden-tablet-mobile {
+		display: none;
+	}
+
+	section {
+		padding: 0 1.5rem;
+	}
+}

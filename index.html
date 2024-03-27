@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flight - Home</title>
+
+	<!-- CSS path -->
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+
+	<!-- logo svg paths -->
+	<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+</head>
+<body>
+	<!-- Hero header -->
+	<header class="hero-header" id="top">
+		<div class="hero-header__left">
+			<img src="assets/logo.svg" alt="Flight logo" class="hero-header__logo">
+			<h1 class="hero-header__title">Choose your direction:</h1>
+			<ul class="hero-header__list upper">
+				<li>
+					<a class="hero-header__social-link" href="#">
+						find us on <b>facebook</b>
+						<img src="assets/icons/facebook-icon.svg" alt="facebook logo">
+					</a>
+				</li>
+				<li>
+					<a class="hero-header__social-link" href="#">
+						our <b>youtube</b> channel
+						<img src="assets/icons/youtube-icon.svg" alt="youtube logo">
+					</a>
+				</li>
+				<li>
+					<a class="hero-header__social-link" href="#">
+						follow our <b>instagram</b>
+						<img src="assets/icons/instagram-icon.svg" alt="instagram logo">
+					</a>
+				</li>
+			</ul>
+			<a class="hero-header__nav-link" href="contact.html">
+				<img src="assets/icons/phone-icon.svg" alt="phone icon">
+				contact us now
+			</a>
+		</div>
+
+		<div class="hero-header__right">
+			<div class="hero-header__form-block">
+				<h2>Check avaibility for direction:</h2>
+				<hr>
+				<form action="#" method="get" class="form upper">
+					<div class="form__row">
+						<div>
+							<label for="origin">from:</label><br>
+							<select class="form__input" name="origin" id="origin">
+								<option value="" disabled selected hidden>
+									Select a location
+								</option>
+								<option value="ci">ivory coast</option>
+								<option value="japan">japan</option>
+								<option value="usa">united states</option>
+								<option value="russia">russia</option>
+							</select>
+						</div>
+						<div>
+							<label for="destination">to:</label><br>
+							<select class="form__input" name="destination" id="destination">
+								<option value="" disabled selected hidden>
+									Select a location
+								</option>
+								<option value="ci">ivory coast</option>
+								<option value="japan">japan</option>
+								<option value="usa">united states</option>
+								<option value="russia">russia</option>
+							</select>
+						</div>
+					</div>
+					<div class="form__row">
+						<div>
+							<label for="departure">departure date:</label><br>
+							<input class="form__input" type="date" name="departure" id="departure">
+						</div>
+						<div>
+							<label for="return">return date:</label><br>
+							<input class="form__input" type="date" name="return" id="return">
+						</div>
+					</div>
+
+					<!-- Radio & submit buttons for desktop -->
+					<div class="form__row form__radio-desktop">
+						<div>
+							<label for="round">round</label>
+							<input type="radio" name="travel_type" value="round" id="round">
+						</div>
+						<div>
+							<label for="oneway">oneway</label>
+							<input type="radio" name="travel_type" value="oneway" id="oneway">
+						</div>
+
+						<div>
+							<input class="form__submit-button capitalize" type="submit" value="order ticket now">
+						</div>
+					</div>
+
+					<!-- Radio & submit buttons for tablet & mobile -->
+					<div class="form__row form__radio-submit">
+						<div class="form__radio">
+							<div>
+								<label for="round">round</label>
+								<input type="radio" name="travel_type" value="round" id="round">
+							</div>
+							<div>
+								<label for="oneway">oneway</label>
+								<input type="radio" name="travel_type" value="oneway" id="oneway">
+							</div>
+						</div>
+
+						<div>
+							<input class="form__submit-button capitalize" type="submit" value="order ticket now">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</header>
+
+	<!-- Weather -->
+	<section class="weather">
+		<h2 class="weather__title">check weather for next 5 days</h2>
+		<div>
+			<div class="upper weather__days-list">
+				<a class="weather__day weather__day--active" href="#">monday</a>
+				<a class="weather__day" href="#">tuesday</a>
+				<a class="weather__day" href="#">wednesday</a>
+				<a class="weather__day" href="#">thursday</a>
+				<a class="weather__day" href="#">friday</a>
+			</div>
+			<div class="weather__prevision-list">
+				<div class="weather__prevision-item">
+					<p class="weather__prevision-title">myanmar</p>
+					<img class="weather__prevision-icon" src="assets/icons/sun-icon.svg" alt="sun icon">
+					<p class="weather__prevision-degree">32°C</p>
+					<div class="weather__prevision-details">
+						<p class="weather__detail">
+							6am
+							<span class="weather__detail-temperature">26°</span>
+						</p>
+						<p class="weather__detail">
+							12am
+							<span class="weather__detail-temperature">32°</span>
+						</p>
+						<p class="weather__detail">
+							6pm
+							<span class="weather__detail-temperature">28°</span>
+						</p>
+						<p class="weather__detail">
+							12pm
+							<span class="weather__detail-temperature">22°</span>
+						</p>
+					</div>
+				</div>
+				<div class="weather__prevision-item">
+					<p class="weather__prevision-title">thailand</p>
+					<img class="weather__prevision-icon" src="assets/icons/sunrise-icon.svg" alt="sunrise icon">
+					<p class="weather__prevision-degree">28°C</p>
+					<div class="weather__prevision-details">
+						<p class="weather__detail">
+							6am
+							<span class="weather__detail-temperature">20°</span>
+						</p>
+						<p class="weather__detail">
+							12am
+							<span class="weather__detail-temperature">28°</span>
+						</p>
+						<p class="weather__detail">
+							6pm
+							<span class="weather__detail-temperature">26°</span>
+						</p>
+						<p class="weather__detail">
+							12pm
+							<span class="weather__detail-temperature">18°</span>
+						</p>
+					</div>
+				</div>
+				<div class="weather__prevision-item">
+					<p class="weather__prevision-title">india</p>
+					<img class="weather__prevision-icon" src="assets/icons/rain-icon.svg" alt="rain icon">
+					<p class="weather__prevision-degree">33°C</p>
+					<div class="weather__prevision-details">
+						<p class="weather__detail">
+							6am
+							<span class="weather__detail-temperature">26°</span>
+						</p>
+						<p class="weather__detail">
+							12am
+							<span class="weather__detail-temperature">33°</span>
+						</p>
+						<p class="weather__detail">
+							6pm
+							<span class="weather__detail-temperature">29°</span>
+						</p>
+						<p class="weather__detail">
+							12pm
+							<span class="weather__detail-temperature">27°</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Skills -->
+	<section class="skills">
+		<div class="skills__item">
+			<img class="skills__icon" src="assets/icons/equalizer-icon.svg" alt="equalizer icon">
+			<h3 class="skills__title">easy tooplate</h3>
+			<p class="skills__description">Donec varius porttitor iaculis. Integer sollicitudin erat et ligula viverra vulputate. In in quam efficitur, pulvinar justo ut, tempor nunc. Phasellus pharetra quis odio.</p>
+		</div>
+		<div class="skills__item">
+			<img class="skills__icon" src="assets/icons/lightbulb-icon.svg" alt="equalizer icon">
+			<h3 class="skills__title">easy tooplate</h3>
+			<p class="skills__description">Cras ligula diam, tristique at aliquam at, fermentum auctor turpis. Proin leo massa, iaculis elementum massa et, consectetur varius dolor. Fusce sed ipsum sit.</p>
+		</div>
+		<div class="skills__item">
+			<img class="skills__icon" src="assets/icons/search-icon.svg" alt="equalizer icon">
+			<h3 class="skills__title">easy tooplate</h3>
+			<p class="skills__description">Fusce leo dui. Mauris et justo eget arcu ultricies porta. Nulla facilisi. Nulla nec risus sit amet magna hendrerit venenatis. Sed porta tincidunt lectus eget ultrices.</p>
+		</div>
+	</section>
+
+	<!-- Gallery -->
+	<section class="gallery">
+		<h2 class="gallery__title">recommended hotel for you</h2>
+		<div class="gallery__content">
+			<div class="gallery__nav">
+				<a class="gallery__nav-item" href="#">
+					living room
+					<img class="gallery__nav-icon" src="assets/icons/right-icon.svg" alt="right direction icon">
+				</a>
+				<a class="gallery__nav-item--active" href="#">
+					suit room
+					<img class="gallery__nav-icon" src="assets/icons/right-active-icon.svg" alt="right direction icon">
+				</a>
+				<a class="gallery__nav-item" href="#">
+					swimming pool
+					<img class="gallery__nav-icon" src="assets/icons/right-icon.svg" alt="right direction icon">
+				</a>
+				<a class="gallery__nav-item" href="#">
+					massage service
+					<img class="gallery__nav-icon" src="assets/icons/right-icon.svg" alt="right direction icon">
+				</a>
+				<a class="gallery__nav-item" href="#">
+					fitness life
+					<img class="gallery__nav-icon" src="assets/icons/right-icon.svg" alt="right direction icon">
+				</a>
+				<a class="gallery__nav-item" href="#">
+					evening event
+					<img class="gallery__nav-icon" src="assets/icons/right-icon.svg" alt="right direction icon">
+				</a>
+			</div>
+			<div class="gallery__img">
+				<div class="gallery__img-content">
+					<p class="gallery-detail">
+						<span class="gallery-detail__title">
+							clean and relaxing room
+						</span>
+						<span class="gallery-detail__description">
+							aurora ressort
+						</span>
+					</p>
+					<ul class="gallery-navlink">
+						<li class="gallery-navlink__circle">
+							<img src="assets/icons/ellipse-active.svg" alt="circle icon">
+						</li>
+						<li class="gallery-navlink__circle">
+							<img src="assets/icons/ellipse.svg" alt="circle icon">
+						</li>
+						<li class="gallery-navlink__circle">
+							<img src="assets/icons/ellipse.svg" alt="circle icon">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Visited places -->
+	<section class="places">
+		<h2 class="places__title">most visited places</h2>
+		<div class="places__list">
+			<div class="places__item">
+				<img src="assets/img/san-francisco_ds.jpg" alt="San Francisco bridge">
+				<p class="places-details">
+					<span class="places-details__title">River Views</span>
+					<span class="places-details__location">new york</span>
+				</p>
+			</div>
+			<div class="places__item">
+				<img src="assets/img/beach_ds.jpg" alt="Beach">
+				<p class="places-details">
+					<span class="places-details__title">Lorem ipsum dolor</span>
+					<span class="places-details__location">tokyo</span>
+				</p>
+			</div>
+			<div class="places__item hidden-tablet-mobile">
+				<img src="assets/img/traffic_ds.jpg" alt="traffic">
+				<p class="places-details">
+					<span class="places-details__title">Proin dignissim</span>
+					<span class="places-details__location">paris</span>
+				</p>
+			</div>
+			<div class="places__item hidden-tablet-mobile">
+				<img src="assets/img/bridge_ds.jpg" alt="Bridge">
+				<p class="places-details">
+					<span class="places-details__title">Fusce sed ipsum</span>
+					<span class="places-details__location">hollywood</span>
+				</p>
+			</div>
+		</div>
+		<ul class="places-navlink">
+			<li class="places-navlink__circle">
+				<img src="assets/icons/ellipse.svg" alt="circle icon">
+			</li>
+			<li class="places-navlink__circle">
+				<img src="assets/icons/ellipse-gray.svg" alt="circle icon">
+			</li>
+			<li class="places-navlink__circle">
+				<img src="assets/icons/ellipse-gray.svg" alt="circle icon">
+			</li>
+		</ul>
+	</section>
+
+	<footer class="footer">
+		<a class="footer__scroll-top" href="#top">back to top</a>
+		<div class="footer__social-list">
+			<a class="footer__social-link" href="#">
+				<img src="assets/icons/facebook-icon.svg" alt="Facebook logo">
+			</a>
+			<a class="footer__social-link" href="#">
+				<img src="assets/icons/twitter-icon.svg" alt="Twitter logo">
+			</a>
+			<a class="footer__social-link" href="#">
+				<img src="assets/icons/linkedin-icon.svg" alt="LinkedIn logo">
+			</a>
+			<a class="footer__social-link" href="#">
+				<img src="assets/icons/rss-icon.svg" alt="RSS logo">
+			</a>
+			<a class="footer__social-link" href="#">
+				<img src="assets/icons/behance-icon.svg" alt="Behance logo">
+			</a>
+		</div>
+		<p class="copyright">Copyright © 2018 Flight Tour and Travel Company | Design: <b class="copyright__template-origin">Tooplate</b></p>
+	</footer>
+</body>
+</html>
